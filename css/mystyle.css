@@ -1,0 +1,357 @@
+:root {
+	--border-width : 1px;
+}
+
+@font-face {
+  font-family: sahel;
+  src: url(../fonts/Sahel-Bold-FD.ttf);
+}
+
+
+body {
+  font-family: sahel;
+  margin : 0;
+}
+
+
+
+
+
+div#today {
+	padding: 1em;
+	display : flex;
+	justify-content : center;
+}
+
+
+form {
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	background-color : grey;
+	padding : 1em;
+	font-size: 2rem;
+}
+
+form .formRow {
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	color : white;
+}
+
+
+
+
+form .formRow:not(:last-child) {
+	margin-bottom : 1rem;
+}
+
+form .formRow:nth-child(1) {
+	margin-bottom : 4rem;
+	display : flex;
+}
+
+
+form .formRow:nth-child(2) {
+	display : flex;
+	/*justify-content : center;*/
+}
+
+
+
+	
+
+
+div.numberFromTo {
+	flex-direction : row-reverse;
+}
+
+
+label {
+	text-align : right;
+	padding-left : 1em; 
+	color : white;
+}
+
+
+input {
+	font-family: sahel; 
+	text-align : left;
+	font-size: 2rem;
+	width : 100px;
+	margin : 0 10px;
+}
+
+
+form span {
+	font-family : Courier;
+}
+
+
+main#tableBody {
+	display : flex;
+	width : 100%;
+}
+
+
+
+div.cell {
+	border : var(--border-width) solid #000;
+	flex : 1;
+	text-align : center;
+	font-size: 3.1em;
+	padding : 8.9px; 
+	padding-bottom : 9px;
+}
+
+
+
+div.col {
+}
+
+
+form .formRow input {
+	font-family: sahel; 
+	text-align : left;
+	font-size: 2rem;
+	width : 100px;
+}
+
+
+span#year {
+	font-size: 2rem;
+	padding : 0 2rem;
+	flex : 1 ;
+	color : white;
+	width : 100px;
+}
+
+
+span.space {
+	color : white;
+	padding : 0 2rem;
+}
+
+
+
+form .formRow select {
+	font-family: sahel; 
+	font-size: 2rem;
+	text-align : left;
+	width : 200px;
+	padding : 0 5px;
+}
+
+
+form .formRow select option {
+	padding: 1px 2px;
+	text-align : left;
+}
+
+
+form .formRow button {
+	flex : 1;
+	margin-top : 1em;
+	padding : 0.5em 0.5em;
+	font-family: sahel;
+	font-size: 2rem;
+	cursor : pointer;
+}
+
+
+table {
+  width : 100%;
+  flex : 1;
+  border-collapse: collapse;
+}
+
+
+tr {
+  flex : 1;
+  width : 100%;
+}
+
+
+
+
+td.normalCol {
+	border : var(--border-width) solid #000;
+	flex : 1;
+	text-align : center;
+	font-size: 3.1em;
+	padding : 8.9px; 
+	padding-bottom : 9px;
+} 
+
+
+td.fifthCol {
+	border : var(--border-width) solid #000;
+	flex : 1;
+	text-align : center;
+	font-size: 3.1em;
+	padding : 8.9px; 
+	padding-top : 8.9px !important;
+	padding-bottom : 9px !important;
+} 
+
+
+td.fifthColSmall {
+	border : var(--border-width) solid #000;
+	flex : 1;
+	text-align : center;
+	font-size: 2.8em;
+	padding : 8.9px; 
+	padding-top : 12.4px !important;
+	padding-bottom : 12.5px !important;
+} 
+
+
+td.lastRow {
+	border-style : solid ;
+	border-color : #000;
+	border-top-width : var(--border-width);
+	border-right-width : var(--border-width);
+	border-left-width : var(--border-width);
+	border-bottom-width : 0px;
+	flex : 1;
+	text-align : center;
+	padding : 9px; 
+	padding-bottom : 9px;
+}
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #27444e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #444;
+}
+
+.button:hover {background-color: #203840}
+
+.button:active {
+  background-color: #203840;
+  box-shadow: 0 3px #333;
+  transform: translateY(4px);
+}
+
+
+
+div.spaceBetween {
+	display : flex ;
+	justify-content : space-around ;
+	align-items : center;
+}
+
+
+div.spaceBetween section section {
+	display : flex ;
+	justify-content : space-around ;
+	position : relative;
+}
+
+div.spaceBetween section section label {
+	margin-bottom : 0.2em;
+}
+
+div.spaceBetween section section input {
+	margin-right : 0.5em;
+}
+
+div.pageForColWrapper {
+	width : 100px;
+	position : relative;
+	display : flex;
+	align-items : center;
+}
+
+div.pageForCol {
+	/*
+	width : 100px;
+	display : flex;
+	flex-direction : column;
+	
+	*/
+	position : absolute;
+	width : 60px;
+	height : 70px;
+	border : 2px solid black;
+	border-radius : 5px;
+	left : 10px;
+	background-color : gray;
+}
+
+div.rowForCol {
+	display : flex;
+}
+
+div.rowForCol span {
+	flex : 1;
+	padding : 6px 4px;
+	border : 1px solid black;
+	
+}
+
+
+
+
+
+
+
+
+div.pageForNumbers {
+	width : 100px;
+	position : relative;
+	display : flex;
+	align-items : center;
+}
+
+
+span.eachpage {
+	display : block;
+	position : absolute;
+	width : 60px;
+	height : 70px;
+	border : 2px solid black;
+	border-radius : 5px;
+	left : 0;
+	background-color : gray;
+}
+
+
+
+
+
+
+
+
+/* width */
+select::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+select::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+select::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

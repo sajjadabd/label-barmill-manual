@@ -1,0 +1,7 @@
+Paper Size : A4
+Layout : Portrait
+Margins : None
+Scale : Custom --> 73
+
+** Disable Print On Both Sides
+** Disable Background Graphics

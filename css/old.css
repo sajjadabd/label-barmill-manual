@@ -1,0 +1,41 @@
+@font-face {
+  font-family: sahel;
+  src: url(./fonts/Sahel-Bold-FD.ttf);
+}
+
+
+
+html , body {
+  margin : 0;
+  font-family: sahel;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin : auto;
+  display : flex;
+  flex : 1
+}
+
+tbody {
+  width : 100%;
+}
+
+tr {
+  display : flex;
+  flex-direction : row;
+  flex : 1;
+}
+
+td {
+  border: 2px solid #000;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex : 1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  
+}
